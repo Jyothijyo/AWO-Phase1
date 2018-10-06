@@ -1,0 +1,165 @@
+2018-10-06 11:23:15.899  INFO 8316 --- [restartedMain] com.awo.app.Application                  : Starting Application on comp with PID 8316 (C:\Users\lenovo\Desktop\updated_project(awo)\AWO\target\classes started by lenovo in C:\Users\lenovo\Desktop\updated_project(awo)\AWO)
+2018-10-06 11:23:15.926  INFO 8316 --- [restartedMain] com.awo.app.Application                  : No active profile set, falling back to default profiles: default
+2018-10-06 11:23:16.041  INFO 8316 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2e43a160: startup date [Sat Oct 06 11:23:16 IST 2018]; root of context hierarchy
+2018-10-06 11:23:18.619  INFO 8316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$71ed3f02] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-06 11:23:19.050  INFO 8316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-10-06 11:23:19.078  INFO 8316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-06 11:23:19.079  INFO 8316 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-10-06 11:23:19.084  INFO 8316 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_131/bin/server;C:/Program Files/Java/jre1.8.0_131/bin;C:/Program Files/Java/jre1.8.0_131/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Android;C:\Windows\System32;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\lenovo\AppData\Roaming\npm;C:\Users\lenovo\AppData\Local\atom\bin;C:\Users\lenovo\Desktop;;.]
+2018-10-06 11:23:19.233  INFO 8316 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/awo/api]       : Initializing Spring embedded WebApplicationContext
+2018-10-06 11:23:19.234  INFO 8316 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3193 ms
+2018-10-06 11:23:19.415  INFO 8316 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-10-06 11:23:19.421  INFO 8316 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-06 11:23:19.421  INFO 8316 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-06 11:23:19.422  INFO 8316 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-06 11:23:19.422  INFO 8316 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-06 11:23:19.602  INFO 8316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-06 11:23:19.824  INFO 8316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-06 11:23:19.902  INFO 8316 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-06 11:23:19.916  INFO 8316 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-06 11:23:20.161  INFO 8316 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-10-06 11:23:20.163  INFO 8316 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-10-06 11:23:20.204  INFO 8316 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-10-06 11:23:20.371  INFO 8316 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-10-06 11:23:21.836  INFO 8316 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-06 11:23:23.182  WARN 8316 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-06 11:23:23.423  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/address],methods=[PUT],produces=[application/json]}" onto public com.awo.app.response.Response com.awo.app.controller.address.AddrController.updateAddress(com.awo.app.model.address.AddrModel,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-06 11:23:23.428  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/address],methods=[POST],produces=[application/json]}" onto public com.awo.app.response.Response com.awo.app.controller.address.AddrController.addAddress(com.awo.app.model.address.AddrModel,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-06 11:23:23.430  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/address/{addressId}],methods=[GET]}" onto public java.lang.String com.awo.app.controller.address.AddrController.getByAddressesId(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-06 11:23:23.433  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addressId/{regId}],methods=[GET]}" onto public java.lang.String com.awo.app.controller.address.AddrController.getByregId(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-06 11:23:23.435  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/address/{addressId}],methods=[DELETE]}" onto public com.awo.app.response.Response com.awo.app.controller.address.AddrController.deleteAddressByAdr(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-06 11:23:23.438  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/image/{regId}],methods=[GET]}" onto public java.lang.String com.awo.app.controller.image.ImgController.getImg(java.lang.String)
+2018-10-06 11:23:23.439  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/image],methods=[POST]}" onto public com.awo.app.response.Response com.awo.app.controller.image.ImgController.saveImg(org.springframework.web.multipart.MultipartFile,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws java.lang.Exception
+2018-10-06 11:23:23.450  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST],produces=[application/json]}" onto public java.lang.String com.awo.app.controller.registration.RegController.authenticate(com.awo.app.model.registration.RegistrationModel,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-06 11:23:23.458  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{regId}],methods=[DELETE]}" onto public com.awo.app.response.Response com.awo.app.controller.registration.RegController.deleteById(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-06 11:23:23.460  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/resetPassword],methods=[PUT],produces=[application/json]}" onto public java.lang.String com.awo.app.controller.registration.RegController.resetPassword(com.awo.app.model.registration.RegistrationModel,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-06 11:23:23.462  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/changePassword],methods=[PUT],produces=[application/json]}" onto public java.lang.String com.awo.app.controller.registration.RegController.changePassword(com.awo.app.domain.registration.UpdatePassword,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-06 11:23:23.464  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userdetails/{regId}],methods=[GET],produces=[application/json]}" onto public java.lang.String com.awo.app.controller.registration.RegController.getDetailsById(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-06 11:23:23.467  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{regId}],methods=[GET],produces=[application/json]}" onto public java.lang.String com.awo.app.controller.registration.RegController.getById(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-06 11:23:23.470  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[POST]}" onto public com.awo.app.response.Response com.awo.app.controller.registration.RegController.saveReg(com.awo.app.model.registration.RegistrationModel,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-06 11:23:23.472  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[GET],produces=[application/json]}" onto public java.lang.String com.awo.app.controller.registration.RegController.getUsers(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-06 11:23:23.473  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/filter],methods=[POST],produces=[application/json]}" onto public java.lang.String com.awo.app.controller.registration.RegController.getDetailByAreaAndPincode(com.awo.app.model.registration.RegistrationModel,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-06 11:23:23.476  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/donorfilter],methods=[POST],produces=[application/json]}" onto public java.lang.String com.awo.app.controller.registration.RegController.getDetailsByAreaAndPincode(com.awo.app.model.registration.RegistrationModel,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-06 11:23:23.483  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/request/update],methods=[PUT],produces=[application/json]}" onto public com.awo.app.response.Response com.awo.app.controller.requestRaise.RequestRaiseController.update(com.awo.app.requestRaise.model.ModelRequest,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-06 11:23:23.488  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/request/getAll],methods=[GET],produces=[application/json]}" onto public com.awo.app.response.Response com.awo.app.controller.requestRaise.RequestRaiseController.getAll(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-06 11:23:23.491  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/request],methods=[POST],produces=[application/json]}" onto public com.awo.app.response.Response com.awo.app.controller.requestRaise.RequestRaiseController.addRequestRaise(com.awo.app.requestRaise.model.ModelRequest,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-10-06 11:23:23.504  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-10-06 11:23:23.536  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-10-06 11:23:23.539  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-10-06 11:23:23.544  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-10-06 11:23:23.559  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-06 11:23:23.561  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-06 11:23:24.218  INFO 8316 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-06 11:23:24.697  INFO 8316 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2e43a160: startup date [Sat Oct 06 11:23:16 IST 2018]; root of context hierarchy
+2018-10-06 11:23:24.842  INFO 8316 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-06 11:23:24.843  INFO 8316 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-06 11:23:25.982  INFO 8316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-10-06 11:23:26.125  INFO 8316 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-06 11:23:26.135  INFO 8316 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-06 11:23:26.169  INFO 8316 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-06 11:23:26.185  INFO 8316 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-10-06 11:23:26.186  INFO 8316 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-10-06 11:23:26.236  INFO 8316 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-10-06 11:23:26.272  INFO 8316 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-10-06 11:23:27.401  INFO 8316 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-10-06 11:23:27.509  INFO 8316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/awo/api'
+2018-10-06 11:23:27.544  INFO 8316 --- [restartedMain] com.awo.app.Application                  : Started Application in 12.247 seconds (JVM running for 14.789)
+2018-10-06 11:23:27.711  INFO 8316 --- [pool-2-thread-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-10-06 11:39:33.118  INFO 8316 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/awo/api]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-06 11:39:33.120  INFO 8316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-06 11:39:33.193  INFO 8316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 72 ms
+2018-10-06 11:39:33.487  INFO 8316 --- [http-nio-8080-exec-6] c.a.a.c.registration.RegController       : AddUser: Received request URL:http://localhost:8080/awo/api/user
+2018-10-06 11:39:33.537  INFO 8316 --- [http-nio-8080-exec-6] c.a.a.c.registration.RegController       : AddUser: Received request: {"firstName":"ravi","middleName":"l","lastName":"l","dob":"1993-12-07T18:30:00.000Z","bloodGroup":"B-","age":25,"availability":true,"gender":"MALE","role":"DONOR","country":"India","area":"","city":"Bagapalli","state":"Karnataka","pincode":"","mobile":"9480434998","emailId":"ravi@gmail.com","password":"Sanjuks123@"}
+2018-10-06 11:39:53.997  INFO 8316 --- [http-nio-8080-exec-5] c.a.a.c.registration.RegController       : authenticate User: Received request URL:http://localhost:8080/awo/api/login
+2018-10-06 11:39:53.999  INFO 8316 --- [http-nio-8080-exec-5] c.a.a.c.registration.RegController       : authenticate User: Received request: {"mobile":"ravi@gmail.com","password":"Sanjuks123@"}
+2018-10-06 11:39:54.192 ERROR 8316 --- [http-nio-8080-exec-5] com.awo.app.dao.image.ImgDaoImp          : Exception in Get UserImage
+2018-10-06 11:39:54.195 ERROR 8316 --- [http-nio-8080-exec-5] com.awo.app.service.image.ImgServiceImp  : Source must not be null
+2018-10-06 11:39:54.196  INFO 8316 --- [http-nio-8080-exec-5] c.a.app.controller.image.ImgController   : null
+2018-10-06 11:39:54.197 ERROR 8316 --- [http-nio-8080-exec-5] c.a.a.s.registration.RegServiceImp       : null
+2018-10-06 11:39:54.228 ERROR 8316 --- [http-nio-8080-exec-5] com.awo.app.dao.image.ImgDaoImp          : Exception in Get UserImage
+2018-10-06 11:39:54.230 ERROR 8316 --- [http-nio-8080-exec-5] com.awo.app.service.image.ImgServiceImp  : Source must not be null
+2018-10-06 11:39:54.231  INFO 8316 --- [http-nio-8080-exec-5] c.a.app.controller.image.ImgController   : null
+2018-10-06 11:39:54.232 ERROR 8316 --- [http-nio-8080-exec-5] c.a.a.s.registration.RegServiceImp       : null
+2018-10-06 11:39:54.248  INFO 8316 --- [http-nio-8080-exec-5] c.a.a.c.registration.RegController       : Authenticate: sent Response
+2018-10-06 11:44:52.626  INFO 8316 --- [http-nio-8080-exec-7] c.a.a.c.registration.RegController       : Get User/DonorDetails:http://localhost:8080/awo/api/donorfilter
+2018-10-06 11:44:52.641  INFO 8316 --- [http-nio-8080-exec-7] c.a.a.s.registration.RegServiceImp       : Exception in get User/Donor Details :null
+2018-10-06 11:44:54.448  INFO 8316 --- [http-nio-8080-exec-2] c.a.a.c.registration.RegController       : Get User/DonorDetails:http://localhost:8080/awo/api/donorfilter
+2018-10-06 11:44:54.455  INFO 8316 --- [http-nio-8080-exec-2] c.a.a.s.registration.RegServiceImp       : Exception in get User/Donor Details :null
+2018-10-06 11:45:00.853  INFO 8316 --- [http-nio-8080-exec-10] c.a.a.c.registration.RegController       : Get User/DonorDetails:http://localhost:8080/awo/api/donorfilter
+2018-10-06 11:45:00.882 ERROR 8316 --- [http-nio-8080-exec-10] com.awo.app.dao.image.ImgDaoImp          : Exception in Get UserImage
+2018-10-06 11:45:00.885 ERROR 8316 --- [http-nio-8080-exec-10] com.awo.app.service.image.ImgServiceImp  : Source must not be null
+2018-10-06 11:45:00.885  INFO 8316 --- [http-nio-8080-exec-10] c.a.app.controller.image.ImgController   : null
+2018-10-06 11:45:00.886 ERROR 8316 --- [http-nio-8080-exec-10] c.a.a.s.registration.RegServiceImp       : null
+2018-10-06 11:45:00.887  INFO 8316 --- [http-nio-8080-exec-10] c.a.a.c.registration.RegController       : getUser: sent Response
+2018-10-06 11:52:46.446  INFO 8316 --- [http-nio-8080-exec-6] c.a.a.c.registration.RegController       : authenticate User: Received request URL:http://localhost:8080/awo/api/login
+2018-10-06 11:52:46.448  INFO 8316 --- [http-nio-8080-exec-6] c.a.a.c.registration.RegController       : authenticate User: Received request: {"mobile":"9480434998","password":"Sanjuks123@"}
+2018-10-06 11:52:46.485 ERROR 8316 --- [http-nio-8080-exec-6] com.awo.app.dao.image.ImgDaoImp          : Exception in Get UserImage
+2018-10-06 11:52:46.488 ERROR 8316 --- [http-nio-8080-exec-6] com.awo.app.service.image.ImgServiceImp  : Source must not be null
+2018-10-06 11:52:46.489  INFO 8316 --- [http-nio-8080-exec-6] c.a.app.controller.image.ImgController   : null
+2018-10-06 11:52:46.490 ERROR 8316 --- [http-nio-8080-exec-6] c.a.a.s.registration.RegServiceImp       : null
+2018-10-06 11:52:46.518 ERROR 8316 --- [http-nio-8080-exec-6] com.awo.app.dao.image.ImgDaoImp          : Exception in Get UserImage
+2018-10-06 11:52:46.521 ERROR 8316 --- [http-nio-8080-exec-6] com.awo.app.service.image.ImgServiceImp  : Source must not be null
+2018-10-06 11:52:46.522  INFO 8316 --- [http-nio-8080-exec-6] c.a.app.controller.image.ImgController   : null
+2018-10-06 11:52:46.522 ERROR 8316 --- [http-nio-8080-exec-6] c.a.a.s.registration.RegServiceImp       : null
+2018-10-06 11:52:46.533  INFO 8316 --- [http-nio-8080-exec-6] c.a.a.c.registration.RegController       : Authenticate: sent Response
+2018-10-06 12:21:04.630  INFO 8316 --- [http-nio-8080-exec-8] c.a.a.c.registration.RegController       : AddUser: Received request URL:http://localhost:8080/awo/api/user
+2018-10-06 12:21:04.631  INFO 8316 --- [http-nio-8080-exec-8] c.a.a.c.registration.RegController       : AddUser: Received request: {"firstName":"girish","middleName":"k","lastName":"m","dob":"1993-12-07T18:30:00.000Z","bloodGroup":"A+","age":25,"availability":true,"gender":"MALE","role":"DONOR","country":"India","area":"","city":"Agaram","state":"Karnataka","pincode":"","mobile":"9731560743","emailId":"girish@gmail.com","password":"Sanjuks123@"}
+2018-10-06 12:22:29.926  INFO 8316 --- [http-nio-8080-exec-2] c.a.a.c.registration.RegController       : authenticate User: Received request URL:http://localhost:8080/awo/api/login
+2018-10-06 12:22:29.927  INFO 8316 --- [http-nio-8080-exec-2] c.a.a.c.registration.RegController       : authenticate User: Received request: {"mobile":"9731560743","password":"Sanjuks123@"}
+2018-10-06 12:22:29.967 ERROR 8316 --- [http-nio-8080-exec-2] com.awo.app.dao.image.ImgDaoImp          : Exception in Get UserImage
+2018-10-06 12:22:29.970 ERROR 8316 --- [http-nio-8080-exec-2] com.awo.app.service.image.ImgServiceImp  : Source must not be null
+2018-10-06 12:22:29.970  INFO 8316 --- [http-nio-8080-exec-2] c.a.app.controller.image.ImgController   : null
+2018-10-06 12:22:29.971 ERROR 8316 --- [http-nio-8080-exec-2] c.a.a.s.registration.RegServiceImp       : null
+2018-10-06 12:22:30.001 ERROR 8316 --- [http-nio-8080-exec-2] com.awo.app.dao.image.ImgDaoImp          : Exception in Get UserImage
+2018-10-06 12:22:30.004 ERROR 8316 --- [http-nio-8080-exec-2] com.awo.app.service.image.ImgServiceImp  : Source must not be null
+2018-10-06 12:22:30.005  INFO 8316 --- [http-nio-8080-exec-2] c.a.app.controller.image.ImgController   : null
+2018-10-06 12:22:30.005 ERROR 8316 --- [http-nio-8080-exec-2] c.a.a.s.registration.RegServiceImp       : null
+2018-10-06 12:22:30.015  INFO 8316 --- [http-nio-8080-exec-2] c.a.a.c.registration.RegController       : Authenticate: sent Response
+2018-10-06 12:22:57.255  INFO 8316 --- [http-nio-8080-exec-10] c.a.a.c.registration.RegController       : authenticate User: Received request URL:http://localhost:8080/awo/api/login
+2018-10-06 12:22:57.257  INFO 8316 --- [http-nio-8080-exec-10] c.a.a.c.registration.RegController       : authenticate User: Received request: {"mobile":"girish@gmail.com","password":"Sanjuks123@"}
+2018-10-06 12:22:57.310 ERROR 8316 --- [http-nio-8080-exec-10] com.awo.app.dao.image.ImgDaoImp          : Exception in Get UserImage
+2018-10-06 12:22:57.312 ERROR 8316 --- [http-nio-8080-exec-10] com.awo.app.service.image.ImgServiceImp  : Source must not be null
+2018-10-06 12:22:57.313  INFO 8316 --- [http-nio-8080-exec-10] c.a.app.controller.image.ImgController   : null
+2018-10-06 12:22:57.314 ERROR 8316 --- [http-nio-8080-exec-10] c.a.a.s.registration.RegServiceImp       : null
+2018-10-06 12:22:57.339 ERROR 8316 --- [http-nio-8080-exec-10] com.awo.app.dao.image.ImgDaoImp          : Exception in Get UserImage
+2018-10-06 12:22:57.341 ERROR 8316 --- [http-nio-8080-exec-10] com.awo.app.service.image.ImgServiceImp  : Source must not be null
+2018-10-06 12:22:57.342  INFO 8316 --- [http-nio-8080-exec-10] c.a.app.controller.image.ImgController   : null
+2018-10-06 12:22:57.342 ERROR 8316 --- [http-nio-8080-exec-10] c.a.a.s.registration.RegServiceImp       : null
+2018-10-06 12:22:57.353  INFO 8316 --- [http-nio-8080-exec-10] c.a.a.c.registration.RegController       : Authenticate: sent Response
+2018-10-06 12:23:48.473  INFO 8316 --- [http-nio-8080-exec-1] c.a.a.c.registration.RegController       : Get User/DonorDetails:http://localhost:8080/awo/api/donorfilter
+2018-10-06 12:23:48.507 ERROR 8316 --- [http-nio-8080-exec-1] com.awo.app.dao.image.ImgDaoImp          : Exception in Get UserImage
+2018-10-06 12:23:48.509 ERROR 8316 --- [http-nio-8080-exec-1] com.awo.app.service.image.ImgServiceImp  : Source must not be null
+2018-10-06 12:23:48.510  INFO 8316 --- [http-nio-8080-exec-1] c.a.app.controller.image.ImgController   : null
+2018-10-06 12:23:48.511 ERROR 8316 --- [http-nio-8080-exec-1] c.a.a.s.registration.RegServiceImp       : null
+2018-10-06 12:23:48.541 ERROR 8316 --- [http-nio-8080-exec-1] com.awo.app.dao.image.ImgDaoImp          : Exception in Get UserImage
+2018-10-06 12:23:48.544 ERROR 8316 --- [http-nio-8080-exec-1] com.awo.app.service.image.ImgServiceImp  : Source must not be null
+2018-10-06 12:23:48.544  INFO 8316 --- [http-nio-8080-exec-1] c.a.app.controller.image.ImgController   : null
+2018-10-06 12:23:48.545 ERROR 8316 --- [http-nio-8080-exec-1] c.a.a.s.registration.RegServiceImp       : null
+2018-10-06 12:23:48.546  INFO 8316 --- [http-nio-8080-exec-1] c.a.a.c.registration.RegController       : getUser: sent Response
+2018-10-06 12:24:05.470  INFO 8316 --- [http-nio-8080-exec-6] c.a.a.c.registration.RegController       : Get User/DonorDetails:http://localhost:8080/awo/api/donorfilter
+2018-10-06 12:24:05.503 ERROR 8316 --- [http-nio-8080-exec-6] com.awo.app.dao.image.ImgDaoImp          : Exception in Get UserImage
+2018-10-06 12:24:05.506 ERROR 8316 --- [http-nio-8080-exec-6] com.awo.app.service.image.ImgServiceImp  : Source must not be null
+2018-10-06 12:24:05.507  INFO 8316 --- [http-nio-8080-exec-6] c.a.app.controller.image.ImgController   : null
+2018-10-06 12:24:05.508 ERROR 8316 --- [http-nio-8080-exec-6] c.a.a.s.registration.RegServiceImp       : null
+2018-10-06 12:24:05.508  INFO 8316 --- [http-nio-8080-exec-6] c.a.a.c.registration.RegController       : getUser: sent Response
+2018-10-06 12:51:51.709  INFO 8316 --- [http-nio-8080-exec-8] c.a.a.c.registration.RegController       : AddUser: Received request URL:http://localhost:8080/awo/api/user
+2018-10-06 12:51:51.710  INFO 8316 --- [http-nio-8080-exec-8] c.a.a.c.registration.RegController       : AddUser: Received request: {"firstName":"Vinay","middleName":"a","lastName":"g","dob":"1993-12-07T18:30:00.000Z","bloodGroup":"B+","age":25,"availability":true,"gender":"MALE","role":"DONOR","country":"India","area":"","city":"Badami","state":"Karnataka","pincode":"","mobile":"9742020911","emailId":"vinay1@gmail.com","password":"Sanjuks123@"}
+2018-10-06 12:52:11.270  INFO 8316 --- [http-nio-8080-exec-2] c.a.a.c.registration.RegController       : authenticate User: Received request URL:http://localhost:8080/awo/api/login
+2018-10-06 12:52:11.272  INFO 8316 --- [http-nio-8080-exec-2] c.a.a.c.registration.RegController       : authenticate User: Received request: {"mobile":"vinay1@gmail.com","password":"Sanjuks123@"}
+2018-10-06 12:52:11.317 ERROR 8316 --- [http-nio-8080-exec-2] com.awo.app.dao.image.ImgDaoImp          : Exception in Get UserImage
+2018-10-06 12:52:11.320 ERROR 8316 --- [http-nio-8080-exec-2] com.awo.app.service.image.ImgServiceImp  : Source must not be null
+2018-10-06 12:52:11.320  INFO 8316 --- [http-nio-8080-exec-2] c.a.app.controller.image.ImgController   : null
+2018-10-06 12:52:11.320 ERROR 8316 --- [http-nio-8080-exec-2] c.a.a.s.registration.RegServiceImp       : null
+2018-10-06 12:52:11.341 ERROR 8316 --- [http-nio-8080-exec-2] com.awo.app.dao.image.ImgDaoImp          : Exception in Get UserImage
+2018-10-06 12:52:11.344 ERROR 8316 --- [http-nio-8080-exec-2] com.awo.app.service.image.ImgServiceImp  : Source must not be null
+2018-10-06 12:52:11.345  INFO 8316 --- [http-nio-8080-exec-2] c.a.app.controller.image.ImgController   : null
+2018-10-06 12:52:11.345 ERROR 8316 --- [http-nio-8080-exec-2] c.a.a.s.registration.RegServiceImp       : null
+2018-10-06 12:52:11.366  INFO 8316 --- [http-nio-8080-exec-2] c.a.a.c.registration.RegController       : Authenticate: sent Response
+2018-10-06 12:52:49.919  INFO 8316 --- [http-nio-8080-exec-1] c.a.a.c.registration.RegController       : Get User/DonorDetails:http://localhost:8080/awo/api/donorfilter
+2018-10-06 12:52:49.954 ERROR 8316 --- [http-nio-8080-exec-1] com.awo.app.dao.image.ImgDaoImp          : Exception in Get UserImage
+2018-10-06 12:52:49.956 ERROR 8316 --- [http-nio-8080-exec-1] com.awo.app.service.image.ImgServiceImp  : Source must not be null
+2018-10-06 12:52:49.957  INFO 8316 --- [http-nio-8080-exec-1] c.a.app.controller.image.ImgController   : null
+2018-10-06 12:52:49.958 ERROR 8316 --- [http-nio-8080-exec-1] c.a.a.s.registration.RegServiceImp       : null
+2018-10-06 12:52:49.958  INFO 8316 --- [http-nio-8080-exec-1] c.a.a.c.registration.RegController       : getUser: sent Response
